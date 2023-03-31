@@ -28,7 +28,13 @@ function generateCatFact() {
     imageDiv.appendChild(image);
     // put the div in the factElement
     factElement.appendChild(imageDiv);
-    image.src = `https://placekitten.com/${Math.floor(Math.random() * 200) + 100}/${Math.floor(Math.random() * 200) + 100}`;
+
+    // create the random image size for the url
+    let size = Math.floor(Math.random() * 200) + 100; // this will get a number between 100 and 300;    
+
+    // set the image source
+    image.src = `https://placekitten.com/${size}/${size}`;
+
     factElement.appendChild(image);
 
 }
