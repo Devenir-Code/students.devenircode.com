@@ -7,9 +7,20 @@ In this case we will use the JSONPlaceholder API to make a request to a server.
 The JSONPlaceholder API is a fake online REST API that you can use whenever you need some
 fake data. It is a great tool for front-end developers because you can use it to test
 APIs without having to use your own server.
+
+Use the Fetch API to make a request to the JSONPlaceholder API
 */
 
-// Use the Fetch API to make a request to the JSONPlaceholder API
+
+/* 
+what is async/await?
+async/await is a way to write asynchronous code that looks synchronous.
+
+it is a way to write asynchronous code that looks synchronous.
+
+when you use async/await, you are telling the program to wait for a 
+promise to resolve before moving on to the next line of code.
+*/
 
 async function getPosts() {
     //make a request to the server
@@ -29,7 +40,4 @@ async function getPosts() {
     let card = document.querySelector('.card');
     card.innerHTML = `<h1>${data.title}</h1><p>${data.body}</p>`;
 }
-
-
-
 

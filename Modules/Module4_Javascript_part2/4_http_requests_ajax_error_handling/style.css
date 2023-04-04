@@ -26,10 +26,5 @@
     margin-top: 20px;
     border-radius: 5px;
 }
-/* 
-if card is empty, hide it
- */
- .card:empty {
-    display: none;
-}
 
+ 
