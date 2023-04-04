@@ -1,0 +1,35 @@
+.wrapper {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+#pageStatus {
+    color: green;
+}
+ 
+#results {
+    color: blue;
+    white-space: pre-wrap;
+}
+
+.card {
+    background-color: #b4b4b4;
+    padding: 20px;
+    color: white;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+/* 
+if card is empty, hide it
+ */
+ .card:empty {
+    display: none;
+}
+
