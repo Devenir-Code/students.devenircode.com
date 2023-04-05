@@ -14,3 +14,14 @@ margin-top: 0;
 .card p {
 margin-bottom: 0.5rem;
 } 
+
+#card-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#card-list .card {
+    margin: 1rem;
+    flex: 0 1 200px;
+    
+}

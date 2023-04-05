@@ -9,6 +9,7 @@ const catFacts = [
     "A cat's nose pad is as unique as a human's fingerprint."
 ];
 
+
 // select HTML elements
 const factElement = document.getElementById('fact');
 const factListElement = document.getElementById('fact-list');
@@ -22,7 +23,7 @@ const image = document.createElement('img');
 // generate a random cat fact
 function generateCatFact() {
     const randomIndex = Math.floor(Math.random() * catFacts.length);
-    factElement.textContent = catFacts[randomIndex];
+    factElement.textContent = `Fact: ${catFacts[randomIndex]}`;
 
     // put the image in the div
     imageDiv.appendChild(image);
@@ -51,3 +52,5 @@ for (let i = 0; i < catFacts.length; i++) {
     factListItem.textContent = catFacts[i];
     factListElement.appendChild(factListItem);
 }
+
+console.log(catFacts);

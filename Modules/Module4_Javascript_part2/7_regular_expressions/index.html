@@ -8,10 +8,17 @@
 <body>
 
     <form onsubmit="return validateForm()">
+        <!-- 
+            email required
+         -->
         <label for="email">Email:</label>
         <input type="email" id="email" name="email">
         <span id="emailError" style="color: red;"></span>
         <br><br>
+
+        <!-- 
+            phone optional
+         -->
         <label for="phone">Phone:</label>
         <input type="text" id="phone" name="phone">
         <span id="phoneError" style="color: red;"></span>
@@ -21,6 +28,7 @@
 
     <script>
         function validateForm() {
+            console.log("Validating form");
             // Get input values
             var email = document.getElementById("email").value;
             var phone = document.getElementById("phone").value;
@@ -36,7 +44,7 @@
             }
 
             // Validate phone input
-            if (phone === "" && !phoneRegex.test(phone)) {
+            if (phone !== "" && !phoneRegex.test(phone)) {
                 document.getElementById("phoneError").innerHTML = "Invalid phone number format";
                 return false;
             }
