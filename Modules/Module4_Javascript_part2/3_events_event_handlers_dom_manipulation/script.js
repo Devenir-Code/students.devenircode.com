@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-
+    console.log('DOM loaded');
     // Get references to the output element and the clear button
     const output = document.getElementById('output');
     const clearButton = document.getElementById('clear-button');
@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Attach an event listener to the document that listens for the "keydown" event
     document.addEventListener('keydown', (event) => {
+        console.log(event, event.key, event.code);
         // When a key is pressed, push the key into the buttonsPushed array
         if (event.key !== 'Meta' && event.key !== 'Alt' && event.key !== 'Control' && event.key !== 'Shift') {
             buttonsPushed.push(event.key);

@@ -11,14 +11,8 @@ const person = {
 
 // cards is an array of objects
 let cards = [
-    {
-        name: 'John',
-        age: 31,
-        address: {
-            city: 'New York',
-            state: 'NY'
-        }
-    },
+    person,
+
     {
         name: 'Jack',
         age: 23,
@@ -107,9 +101,6 @@ document.addEventListener('DOMContentLoaded', function () {
         cardElement.appendChild(addressElement);
     }
 
-
-
-
 });
 
 /*
@@ -117,3 +108,4 @@ Q: What is a callback function?
 A: A callback function is a function that is passed to another 
 function as an argument and is executed after some operation has been completed.
  */
+
