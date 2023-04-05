@@ -20,11 +20,17 @@ it is a way to write asynchronous code that looks synchronous.
 
 when you use async/await, you are telling the program to wait for a 
 promise to resolve before moving on to the next line of code.
+
+https://youmightnotneedjquery.com/?support=ie8
 */
 
 async function getPosts() {
+    //get random number between 1 and 100
+    let random = Math.floor(Math.random() * 100) + 1;
+
     //make a request to the server
-    let result = await fetch('https://jsonplaceholder.typicode.com/posts/1');
+    let result = await fetch(`https://jsonplaceholder.typicode.com/posts/${random}`);
+    console.log(result);
     let data = await result.json();
     console.log(data);
 
