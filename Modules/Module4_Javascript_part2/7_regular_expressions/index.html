@@ -2,15 +2,48 @@
 <html>
 
 <head>
-    <title>Regular Expressions in HTML</title>
-    <script src="./script.js"></script>
-    <link rel="stylesheet" href="./style.css">
+    <title>Regex Validation Example</title>
 </head>
 
 <body>
-    <div id="animals">
-        The quick brown fox jumps over the lazy dog
-    </div>
+
+    <form onsubmit="return validateForm()">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <span id="emailError" style="color: red;"></span>
+        <br><br>
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" name="phone">
+        <span id="phoneError" style="color: red;"></span>
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        function validateForm() {
+            // Get input values
+            var email = document.getElementById("email").value;
+            var phone = document.getElementById("phone").value;
+
+            // Define regular expressions
+            var emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            var phoneRegex = /^\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}$/;
+
+            // Validate email input
+            if (!emailRegex.test(email)) {
+                document.getElementById("emailError").innerHTML = "Invalid email format";
+                return false;
+            }
+
+            // Validate phone input
+            if (phone === "" && !phoneRegex.test(phone)) {
+                document.getElementById("phoneError").innerHTML = "Invalid phone number format";
+                return false;
+            }
+
+            return true;
+        }
+    </script>
 </body>
 
 </html>
