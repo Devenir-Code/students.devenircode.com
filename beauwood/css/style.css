@@ -3,7 +3,7 @@ h1,h2 {
 }
 
 .drops_img, .flour_img {
-    width: .75rem;
-    height: .75rem;
+    width: 2.75rem;
+    height: 2.75rem;
     text-align: center;
 }
