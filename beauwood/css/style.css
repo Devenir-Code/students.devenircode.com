@@ -7,3 +7,7 @@ h1,h2 {
     height: 2rem;
     text-align: center;
 }
+
+.w-12.h-12.rounded-full {
+    background-color: white;
+}
