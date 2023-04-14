@@ -1,3 +1,20 @@
 p.intro {
     font-family: Roboto;
 }
+
+.bottom_section {
+    background-image: url("/alumni/mockup-assets/images/keyboard_coffee.png");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.haley, .kacee, .ginger, .rachael, .rachel, .ciara, .danny2, .danny3, .danny4, .danny5 {
+    transition: all .2s ease-in-out;
+}
+
+.haley:hover, .kacee:hover, .ginger:hover, .rachael:hover, .rachel:hover,
+ .ciara:hover, .danny2:hover, .danny3:hover, .danny4:hover, .danny5:hover {
+    transform: scale(1.1);
+}
