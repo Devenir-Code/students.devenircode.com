@@ -11,7 +11,8 @@ p.intro {
 }
 
 .haley, .kacee, .ginger, .rachael, .rachel, .ciara, .danny2, .danny3, .danny4, .danny5 {
-    transition: all .2s ease-in-out;
+    transition: all .7s ease-in-out;
+    /* animation: fadeIn 3s; */
 }
 
 .haley:hover, .kacee:hover, .ginger:hover, .rachael:hover, .rachel:hover,
