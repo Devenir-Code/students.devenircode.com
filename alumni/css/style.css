@@ -9,3 +9,13 @@ p.intro {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.haley, .kacee, .ginger, .rachael, .rachel, .ciara, .danny2, .danny3, .danny4, .danny5 {
+    transition: all .7s ease-in-out;
+    /* animation: fadeIn 3s; */
+}
+
+.haley:hover, .kacee:hover, .ginger:hover, .rachael:hover, .rachel:hover,
+ .ciara:hover, .danny2:hover, .danny3:hover, .danny4:hover, .danny5:hover {
+    transform: scale(1.1);
+}
