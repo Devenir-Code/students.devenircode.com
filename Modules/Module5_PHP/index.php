@@ -9,10 +9,9 @@
 </head>
 
 <body>
-
-    <?php
-    echo "Hello World";
-    ?>
+    <h1>
+        <?php echo "PHP Server is working"; ?>
+    </h1>
 
 </body>
 
