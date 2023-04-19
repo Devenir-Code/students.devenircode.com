@@ -20,7 +20,8 @@
         </h1>
 
         <ul>
-            <li><a href="/1_Getting_Setup/">1_Getting_Setup</a></li>
+            <li><a href="1_getting_setup/">1_Getting_Setup</a></li>
+            <li><a href="2_basic_syntax/">2_basic_syntax</a></li>
         </ul>
     </div>
 </body>

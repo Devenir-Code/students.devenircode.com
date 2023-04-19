@@ -13,9 +13,7 @@
     <div class="wrapper">
         <h1><?php echo "Hello World <br>"; ?></h1>
         <ul>
-            <li>
-                <a href="test.php">Test</a>
-            </li>
+            <li> <a href="./phpinfo.php">PHP INFO</a> </li>
         </ul>
     </div>
 </body>

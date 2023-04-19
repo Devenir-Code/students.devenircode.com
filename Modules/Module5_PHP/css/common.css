@@ -7,21 +7,19 @@
     align-items: center;
 }
 
+ol li,
 ul li {
-    /* style up with padding and margin */
-    /* make it look like a button */
-    list-style: none;
     margin: 10px;
     padding: 10px;
     background-color: #f1f1f1;
     border-radius: 5px;
     cursor: pointer;
-
-
 }
 
+ 
+
 li:hover {
-    color: red;
+    color: rgb(123, 123, 123);
     background-color: #E1E1E1;
 }
 
