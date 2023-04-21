@@ -7,9 +7,12 @@ p.intro {
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover; background-color: rgb(221,232,232);
-    background-color: linear-gradient(0deg, rgba(221,232,232,1) 0%, rgba(15,96,87,1) 72%);
+    background-size: cover; 
 }
+
+body {
+    background: rgb(221,232,232);
+    background: linear-gradient(0deg, rgba(221,232,232,1) 0%, rgba(17,144,161,0.4108018207282913) 99%);}
 
 .haley, .kacee, .ginger, .rachael, .rachel, .ciara, .danny2, .danny3, .danny4, .danny5 {
     transition: all .7s ease-in-out;
