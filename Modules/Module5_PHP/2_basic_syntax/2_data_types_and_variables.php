@@ -45,6 +45,10 @@ $colors = array("red", "green", "blue", "yellow");
 echo "The colors are " . implode(", ", $colors) . ".<br>"; // Output: The colors are red, green, blue, yellow.
 
 
+// Constants
+define("PI", 3.14);
+echo PI; // Output: 3.14
+
 /* An Object is a data type that represents a complex data 
 structure made up of properties and methods, allowing for 
 more advanced programming techniques such as 
