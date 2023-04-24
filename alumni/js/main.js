@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function() {
   
     ciara.addEventListener('mouseenter', function() {
       console.log("testing");
-      this.setAttribute('src', 'https://www.wallpaperup.com/uploads/wallpapers/2015/04/23/669391/9e5d0e99436486d99d84c2d2f8cb1c69.jpg');
+      this.setAttribute('src', '/alumni/student/ciara/images/photo.jpg');
     });
   
     ciara.addEventListener('mouseleave', function() {
