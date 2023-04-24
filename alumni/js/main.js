@@ -48,3 +48,11 @@ $(document).ready(function() {
         $(this).attr('src', '/alumni/student/haley/images/haley_face.JPG');
       });
 });
+
+$(document).ready(function(){
+    // $("button").click(function(){
+    //   $("#top_gray_box").fadeIn();
+      $("#top_gray_box").hide().fadeIn("3500");
+    //   $("#top_gray_box").fadeIn(3000);
+    // });
+  });
