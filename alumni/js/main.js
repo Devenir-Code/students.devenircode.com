@@ -48,6 +48,19 @@ $(document).ready(function() {
         $(this).attr('src', '/alumni/student/haley/images/haley_face.JPG');
       });
 });
+const ciara = document.querySelector('#ciara');
+document.addEventListener('DOMContentLoaded', function() {
+    const ciara = document.querySelector('#ciara');
+  
+    ciara.addEventListener('mouseenter', function() {
+      console.log("testing");
+      this.setAttribute('src', 'https://www.wallpaperup.com/uploads/wallpapers/2015/04/23/669391/9e5d0e99436486d99d84c2d2f8cb1c69.jpg');
+    });
+  
+    ciara.addEventListener('mouseleave', function() {
+      this.setAttribute('src', '/alumni/student/ciara/images/Headshot.jpg');
+    });
+  });
 
 $(document).ready(function(){
     // $("button").click(function(){
