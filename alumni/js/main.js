@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-
+//changing Haley Benson image on hover
 $(document).ready(function() {
     $('#haley_img').hover(function() {
         console.log("testing");
@@ -49,10 +49,8 @@ $(document).ready(function() {
       });
 });
 
+
+//fading in the top text in grey box div
 $(document).ready(function(){
-    // $("button").click(function(){
-    //   $("#top_gray_box").fadeIn();
-      $("#top_gray_box").hide().fadeIn("3500");
-    //   $("#top_gray_box").fadeIn(3000);
-    // });
+    $("#top_gray_box").hide().fadeIn("3000");
   });
