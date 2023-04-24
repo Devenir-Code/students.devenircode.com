@@ -38,3 +38,13 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 });
+
+
+$(document).ready(function() {
+    $('#haley_img').hover(function() {
+        console.log("testing");
+        $(this).attr('src', '/alumni/student/haley/images/haley_hiking.jpg');
+      }, function() {
+        $(this).attr('src', '/alumni/student/haley/images/haley_face.JPG');
+      });
+});
