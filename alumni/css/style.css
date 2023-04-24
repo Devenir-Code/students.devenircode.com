@@ -23,3 +23,6 @@ body {
  .ciara:hover, .danny2:hover, .danny3:hover, .danny4:hover, .danny5:hover {
     transform: scale(1.1);
 }
+section.mentors {
+background-color: #BDC7C7;
+}
