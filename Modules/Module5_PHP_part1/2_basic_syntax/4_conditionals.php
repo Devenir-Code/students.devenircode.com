@@ -14,7 +14,7 @@ if ($age < 18) {
     echo "You are a senior citizen.<br>"; // Output: You are a senior citizen.
 }
 
-
+echo '<hr>';
 
 /* A Ternary operator is a shorthand way of writing a 
 simple if-else statement in a single line of code, 
@@ -23,12 +23,13 @@ allowing for more concise and readable code. */
 $age = 25;
 echo "You are " . ($age < 18 ? "a minor" : "an adult") . ".<br>"; // Output: You are an adult.
 
-
+echo '<hr>';
 
 /* A Switch statement is a programming construct in PHP 
 that allows for multiple cases to be evaluated against a 
 single value, executing the code block associated with the 
 first matching case. */
+
 // Switch Statements
 $age = 20;
 switch ($age) {

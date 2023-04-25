@@ -8,20 +8,20 @@ for ($i = 1; $i <= 5; $i++) {
 }
 
 
-
+echo "<hr>";
 
 /* WHILE Loops execute a block of code 
 while a certain condition is true */
 //WHILE
-$targetNumber = rand(1, 10); // Generate random number between 1 and 10
+$targetNumber = rand(1, 5); // Generate random number between 1 and 10
 $guesses = 0; // Initialize guesses counter to 0
 
 while (true) {
     $guesses++; // Increment guesses counter on each iteration
-    $guess = rand(1, 10); // Generate a new random guess
-    
+    $guess = rand(1, 5); // Generate a new random guess
+
     echo "Guess #" . $guesses . ": " . $guess . "<br>"; // Output current guess
-    
+
     if ($guess == $targetNumber) {
         echo "Congratulations! You guessed the number " . $targetNumber . " in " . $guesses . " tries.<br>"; // Output success message and number of tries
         break; // End loop
@@ -29,11 +29,11 @@ while (true) {
 }
 
 
-
+echo "<hr>";
 
 /* FOREACH Loops are used to iterate over each element 
 in an array or collection. */
-//FOREACH LOOP
+// FOREACH LOOP
 $grades = array(
     "Alice" => 85,
     "Bob" => 72,
@@ -51,6 +51,8 @@ foreach ($grades as $name => $grade) {
     $count++; // Increment count
 }
 
+echo "<hr>";
+
+
 $average = $total / $count; // Calculate average grade
 echo "Average grade: " . $average . "<br>"; // Output average grade
-
