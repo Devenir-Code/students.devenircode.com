@@ -10,22 +10,21 @@ $car = [
     "sound" => "Vroom!"
 ];
 
-// $car = [
-//     "make" => "Ford",
-//     "model" => "Fiesta",
-//     "color" => "blue",
-//     "sound" => "Beep!"
-// ];
+$car = [
+    "make" => "Ford",
+    "model" => "Fiesta",
+    "color" => "blue",
+    "sound" => "Beep!"
+];
 
-// $car = [
-//     "make" => "Tesla",
-//     "model" => "Model S",
-//     "color" => "black",
-//     "sound" => "Silence!"
-// ];
+$car = [
+    "make" => "Tesla",
+    "model" => "Model S",
+    "color" => "black",
+    "sound" => "Silence!"
+];
 
 // echo the car's make
-
 echo "My car is a " . $car["make"] . " " . $car["model"] . " that is " . $car["color"] . " and I go: " . $car["sound"] . "<br>";
 
 
@@ -45,12 +44,14 @@ class Car
     public $make;
     public $model;
     public $color;
+    public $doors;
 
-    public function __construct($make, $model, $color)
+    public function __construct($make, $model, $color = "black", $doors = 4)
     {
         $this->make = $make;
         $this->model = $model;
         $this->color = $color;
+        $this->doors = $doors;
     }
 
     public function getMake()
@@ -80,18 +81,35 @@ class Car
             return "Beep!";
         }
     }
+
+    //status
+    public function status()
+    {
+        return "My car is a " . $this->make . " " . $this->model . " that is " . $this->color . " and I go: " . $this->makeSound() . '<br>';
+    }
+}
+
+$myCar1 = new Car("Ford", "Mustang", "red");
+$myCar2 = new Car("Ford", "Fiesta", "blue");
+$myCar3 = new Car("Tesla", "Model S", "black");
+
+$cars = [$myCar1, $myCar2, $myCar3];
+
+// echo "My car is a " . $myCar1->getMake() . " " . $myCar1->getModel() . " that is " . $myCar1->getColor() . "And I go: " . $myCar1->makeSound() . "<br>";
+// echo "My car is a " . $myCar1->getMake() . " " . $myCar1->getModel() . " that is " . $myCar1->getColor() . "And I go: " . $myCar1->makeSound() . "<br>";
+// echo "My car is a " . $myCar1->getMake() . " " . $myCar1->getModel() . " that is " . $myCar1->getColor() . "And I go: " . $myCar1->makeSound() . "<br>";
+
+// echo out status
+foreach ($cars as $car) {
+    echo $car->status();
 }
 
 
 
-
-$myCar = new Car("Ford", "Mustang", "red");
-echo "My car is a " . $myCar->getMake() . " " . $myCar->getModel() . " that is " . $myCar->getColor() . "And I go: " . $myCar->makeSound() . "<br>";
-
-
-
-
-// In PHP, you can use inheritance to create a class that inherits properties and methods from another class. Here's an example of how to create a three-level inheritance hierarchy with a PHP class starting from `Animal` down to `Elephant`:
+// In PHP, you can use inheritance to create a class that 
+// inherits properties and methods from another class. 
+// Here's an example of how to create a three-level inheritance 
+// hierarchy with a PHP class starting from `Animal` down to `Elephant`:
 
 
 
@@ -122,8 +140,10 @@ class Mammal extends Animal
     }
 }
 
+// ElephantClass.php
 class Elephant extends Mammal
 {
+
     public $trunkLength;
     public $canFly;
 
@@ -136,7 +156,9 @@ class Elephant extends Mammal
 
     public function getTrunkLength()
     {
-        return $this->trunkLength;
+        // convert trunk length to feet to yard
+        $this->trunkLength = $this->trunkLength * 3;
+        return $this->trunkLength . " feet";
     }
 
     // write a method about elephants flying
@@ -146,7 +168,7 @@ class Elephant extends Mammal
     }
 }
 
-$elephant = new Elephant("Dumbo", "Gray", 2, false);
+$elephant = new Elephant("Dumbo", "Gray", 1, true);
 
 echo '<hr>';
 
