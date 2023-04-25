@@ -12,6 +12,7 @@ echo "<hr>";
 
 /* WHILE Loops execute a block of code 
 while a certain condition is true */
+
 //WHILE
 $targetNumber = rand(1, 5); // Generate random number between 1 and 10
 $guesses = 0; // Initialize guesses counter to 0
