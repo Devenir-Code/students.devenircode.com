@@ -1,7 +1,7 @@
  <footer>
      <div class="container">
          <div class="row justify-content-center">
-             <div class="col-sm-4 col-md-3 item">
+             <div>
                  <h3>Services</h3>
                  <ul>
                      <li> <a href="./index.php">Home</a> </li>
@@ -11,7 +11,7 @@
                      <li> <a href="../">ROOT</a> </li>
                  </ul>
              </div>
-             <div class="col-sm-4 col-md-3 item">
+             <div>
                  <h3>About</h3>
                  <ul>
                      <li><a href="#">Company</a></li>
@@ -19,7 +19,7 @@
                      <li><a href="#">Legacy</a></li>
                  </ul>
              </div>
-             <div class="col-sm-4 col-md-3 item">
+             <div>
                  <h3>Careers</h3>
                  <ul>
                      <li><a href="#">Job openings</a></li>
