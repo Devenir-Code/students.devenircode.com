@@ -38,3 +38,32 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 });
+
+//changing Haley Benson image on hover
+$(document).ready(function() {
+    $('#haley_img').hover(function() {
+        console.log("testing");
+        $(this).attr('src', '/alumni/student/haley/images/haley_hiking.jpg');
+      }, function() {
+        $(this).attr('src', '/alumni/student/haley/images/haley_face.JPG');
+      });
+});
+const ciara = document.querySelector('#ciara');
+document.addEventListener('DOMContentLoaded', function() {
+    const ciara = document.querySelector('#ciara');
+  
+    ciara.addEventListener('mouseenter', function() {
+      console.log("testing");
+      this.setAttribute('src', '/alumni/student/ciara/images/photo.jpg');
+    });
+  
+    ciara.addEventListener('mouseleave', function() {
+      this.setAttribute('src', '/alumni/student/ciara/images/Headshot.jpg');
+    });
+  });
+
+
+//fading in the top text in grey box div
+$(document).ready(function(){
+    $("#top_gray_box").hide().fadeIn("3000");
+  });

@@ -1,0 +1,70 @@
+/* 
+Kevin Powell's reset.css
+https://www.youtube.com/watch?v=2lyDv0wOQuQ
+*/
+
+/* 
+reset box-sizing to border-box
+this makes sure that the padding and border are included in 
+the width and height of the element
+
+making it easier to work with
+*/
+
+*, *::before, *::after {
+    
+    /* box-sizing makes it so that padding
+     and border are included in
+     
+     it makes it easier to work by
+     allowing us to set the width and height
+     and it will include the padding and border
+     */
+    box-sizing: border-box;
+}
+
+/* 
+    force all elements to have no margin, padding and font
+    things like h1, h2, p, etc will inherit the font from the body
+    
+*/
+*{
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+/* sets a default dark mode */
+/* html { color-scheme: dark light; } */
+
+
+/* 
+    reset the body's min-height to 100vh
+    so that the footer will always be at the bottom
+*/
+html,body{
+    min-height: 100vh; 
+}
+
+/* 
+    reset images, videos, svg, etc
+    and make them responsive
+*/
+img,picture,svg,video{
+    display: block;
+    max-width: 100%;
+}
+
+/* 
+    reset inputs
+    make them inherit the font-family and font-size
+    removing the default styling
+*/
+input, textarea, select, button{
+    font-family: inherit;
+    font-size: inherit;
+}
+
+/* 
+
+*/
