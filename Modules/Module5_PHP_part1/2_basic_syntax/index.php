@@ -15,6 +15,8 @@
             <?php echo "Basic Syntax"; ?>
         </h1>
         <ol>
+            <li><a href="1_hello_world.php">Hello World</a></li>
+            <li><a href="PHP_Output_to_browser.png" target="_blank">PHP Output to Browser</a></li>
             <li><a href="1_output.php">Output</a></li>
             <li><a href="2_data_types_and_variables.php">Data Types and Variables</a></li>
             <li><a href="3_arrays.php">Arrays</a></li>

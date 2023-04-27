@@ -2,7 +2,6 @@
 
 // Comments
 // single line comment
-
 # single line comment
 
 /*
@@ -15,25 +14,27 @@
 // Output and Functions
 $name = "Jill";
 //single quotes
-echo 'Single, ' . $name . '!<br>';
+
+// echo 'Single, ' . $name . '!<br>';
 
 /*
 In this example, the variable name is not evaluated,
 because the variable is enclosed in single quotes
 */
-echo 'Hello, $name!<br>';
+// echo 'Hello, $name!<br>';
 
 //double quotes
-echo "Hello, $name!<br>";
-echo "Hello, " . $name . "!<br>"; // Works the same as above
+// echo "Hello, $name!<br>";
+// echo "Hello, " . $name . "!<br>"; // Works the same as above
 
 
 /* 
 multiline strings
 */
-echo "Hello, $name!!!!
-How are you?
-I hope everything is going well. <br>";
+// echo '<pre>';
+// echo "Hello, $name!!!!
+// How are you?
+// I hope everything is going well. <br>";
 
 echo '<pre>';
 
@@ -48,10 +49,11 @@ echo '<pre>';
 
 
 // print
-print "Hello, " . $name . "!";
+// print "Hello, " . $name . "!";
+// echo '<hr>';
 
 // print_r
-$colors = ["red", "green", "blue", "yellow"];
+// $colors = ["red", "green", "blue", "yellow"];
 // print_r($colors);
 
 echo '<hr>';
@@ -68,5 +70,7 @@ $person = [
 // var_dump("Hello, World!");
 
 echo gettype($person);
+echo '<br>';
+echo gettype('test');
 
 echo '</pre>';
