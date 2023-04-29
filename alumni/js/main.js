@@ -65,5 +65,5 @@ document.addEventListener('DOMContentLoaded', function() {
 
 //fading in the top text in grey box div
 $(document).ready(function(){
-    $("#top_gray_box").hide().fadeIn("3000");
+    $("#top_gray_box").hide().fadeIn("10000");
   });
