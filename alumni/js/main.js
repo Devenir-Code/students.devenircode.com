@@ -48,6 +48,7 @@ $(document).ready(function () {
         $(this).attr('src', '/alumni/student/haley/images/haley_face.JPG');
     });
 });
+
 const ciara = document.querySelector('#ciara');
 document.addEventListener('DOMContentLoaded', function () {
     const ciara = document.querySelector('#ciara');
@@ -67,3 +68,12 @@ document.addEventListener('DOMContentLoaded', function () {
 $(document).ready(function () {
     $("#top_gray_box").hide().fadeIn(3000);
 });
+
+//showing popup box when clicked on student image - Haley
+function openPopup() {
+    document.getElementById("haley_pop").style.width = "100%";
+  }
+  
+function closePopup() {
+    document.getElementById("haley_pop").style.width = "0%";
+}
