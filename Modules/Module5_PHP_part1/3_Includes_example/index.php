@@ -11,7 +11,7 @@
     <title>Document</title>
 
     <?php
-    echo '<link rel="stylesheet" href="./css/reset.css">';
+    // echo '<link rel="stylesheet" href="./css/reset.css">';
     ?>
 
     <link rel="stylesheet" href="./css/style.css">
