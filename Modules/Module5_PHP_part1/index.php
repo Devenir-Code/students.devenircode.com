@@ -23,6 +23,7 @@
             <li><a href="1_getting_setup/">1_Getting_Setup</a></li>
             <li><a href="2_basic_syntax/">2_Basic_Syntax</a></li>
             <li><a href="3_includes_example/">3_Includes_Example</a></li>
+            <li><a href="examples/">Examples</a></li>
         </ul>
     </div>
 </body>
