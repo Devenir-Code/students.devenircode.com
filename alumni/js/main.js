@@ -67,3 +67,19 @@ document.addEventListener('DOMContentLoaded', function() {
 $(document).ready(function(){
     $("#top_gray_box").hide().fadeIn("3000");
   });
+
+  
+document.addEventListener('DOMContentLoaded', function() {
+    const ben = document.querySelector('#ben');
+    const newimg = ben.dataset.src;
+    const currentimg = ben.src;
+    console.log(newimg);
+    ben.addEventListener('mouseenter', function() {
+      console.log("testing");
+      this.setAttribute('src',newimg );
+    });
+  
+    ben.addEventListener('mouseleave', function() {
+      this.setAttribute('src', currentimg);
+    });
+  });
