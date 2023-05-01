@@ -77,3 +77,15 @@ function openPopup() {
 function closePopup() {
     document.getElementById("haley_pop").style.width = "0%";
 }
+
+//Changing Ginger Sorensen Image on Hover
+function setNewImage()
+{
+    document.getElementById("ginger").src="/alumni/student/ginger/Images/Ginger Sorensen.jpg";
+}
+
+function setOldImage()
+{
+
+    document.getElementById("ginger").src="/alumni/student/ginger/Images/Ginger & Lucy.jpg";
+}
