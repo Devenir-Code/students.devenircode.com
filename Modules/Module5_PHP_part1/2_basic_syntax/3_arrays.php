@@ -25,3 +25,19 @@ $employees = array(
     array("name" => "Charlie", "position" => "Designer", "salary" => 30000)
 );
 echo $employees[0]["name"] . " is a " . $employees[0]["position"] . " with a salary of $" . $employees[0]["salary"] . ".<br>"; // Output: Alice is a Manager with a salary of $50000.
+
+
+// Create an array of fun activities
+$activities = array(
+    "Playing video games",
+    "Going to the beach",
+    "Watching movies",
+    "Eating pizza",
+    "Playing board games"
+);
+
+// Shuffle the array
+shuffle($activities);
+
+// Output a random activity
+echo "Let's do something fun! How about " . $activities[0] . "?";

@@ -124,7 +124,7 @@
     <div class="">
 
         <section class="bg-gray-500">
-            <div id="top_gray_box" class="container px-4 mx-auto">
+            <div class="container px-4 mx-auto">
                 <nav class="flex justify-between items-center py-8">
                     <a class="text-gray-600 text-2xl leading-none" href="#">
                         <img class="w-10" src="mockup-assets/logos/stork-icon.png" alt="" width="auto">
@@ -152,7 +152,7 @@
                         </svg>
                     </button>
                 </nav>
-                <div class="relative pt-12 md:pt-16 pb-32 lg:pb-48 mb-48 lg:mb-64 bg-gray-500">
+                <div id="top_gray_box" class="relative pt-12 md:pt-16 pb-32 lg:pb-48 mb-48 lg:mb-64 bg-gray-500">
                     <div class="max-w-2xl mb-16 mx-auto text-center">
                         <h2 class="mb-8 text-4xl lg:text-5xl text-white font-family: 'Jost', sans-serif;">Introducing our newest students.</h2>
                         <p class="mb-8 text-lg text-gray-50" style="font-family:'Roboto', sans-serif;">"We're excited to introduce you to our latest cohort of students, who are ready to take the web by storm"</p>
@@ -219,8 +219,8 @@
                 </div>
                 <div class="flex flex-wrap -m-4">
                     <div class="w-full md:w-1/2 lg:w-1/3 p-4 haley">
-                        <div class="p-6 pb-12 bg-gray-50 rounded-lg text-center">
-                            <img id="haley_img" class="w-full w-full h-80 mx-auto mb-6 object-cover rounded-lg"
+                        <div id="haley_block" class="p-6 pb-12 bg-gray-50 rounded-lg text-center">
+                            <img id="haley_img" onclick="openPopup()" class="w-full w-full h-80 mx-auto mb-6 object-cover rounded-lg"
                                 src="/alumni/student/haley/images/haley_face.JPG" alt="">
                             <h3 class="text-2xl font-bold font-heading">Haley Benson</h3>
                             <p class="mb-6 text-lg text-gray-500">Student</p>
@@ -237,6 +237,24 @@
                                 <a class="inline-block" href="https://github.com/harc-agency/students.storkmentors.com">
                                     <img src="mockup-assets/socials/github.svg">
                                 </a>
+                            </div> 
+                        </div>      
+                    </div>
+                    <div id="haley_pop" class="overlay">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closePopup()">&times;</a>
+                        <div class="overlay-content flex flex-wrap items-center">
+                            <div class="w-1/2 rounded-lg"> <!--image slider-->
+                                <img src="/alumni/student/haley/images/haley_face.JPG" alt="">
+                            </div>    
+                            <div class=""> <!--here is the outbox of the bio/link-->
+                                <div class="text-white"> <!--here is the bio-->
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, magnam.
+                                </div>
+                                <div> <!--here is the git link-->
+                                    <a class="inline-block" href="https://github.com/haleybenson23">
+                                        <img src="mockup-assets/socials/github.svg">
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -264,7 +282,7 @@
                     </div>
                     <div class="w-full md:w-1/2 lg:w-1/3 p-4 ginger">
                         <div class="p-6 pb-12 bg-gray-50 rounded-lg text-center">
-                            <img class="w-full h-80 mx-auto mb-6 object-cover rounded-lg"
+                            <img id="ginger" onmouseover="setNewImage()" onmouseout="setOldImage()" class="w-full h-80 mx-auto mb-6 object-cover rounded-lg"
                                 src="/alumni/student/ginger/Images/Ginger & Lucy.jpg" alt="">
                             <h3 class="text-2xl font-bold font-heading">Ginger Sorensen</h3>
                             <p class="mb-6 text-lg text-gray-500">Student</p>
@@ -360,8 +378,8 @@
                 <div class="flex flex-wrap -m-4">
                     <div class="w-full md:w-1/2 lg:w-1/3 p-4 danny2">
                         <div class="p-6 pb-12 bg-gray-50 rounded-lg text-center">
-                            <img class="w-full w-full h-80 mx-auto mb-6 object-cover rounded-lg"
-                                src="/alumni/student/ben/headshot.jpg" alt="" >
+                            <img id="ben" class="w-full w-full h-80 mx-auto mb-6 object-cover rounded-lg"
+                                src="/alumni/student/ben/photos/headshot.jpg" alt="" data-src="/alumni/student/ben/photos/swing.jpg">
                             <h3 class="text-2xl font-bold font-heading">Ben Christiansen</h3>
                             <p class="mb-6 text-lg text-gray-500">Aspiring Web Wizard &amp; Bug Slayer</p>
                             <div>
@@ -471,7 +489,7 @@
                                         src="/alumni/student/ciara/images/tanner.jpeg" alt="">
                                 </div>
                                 <div class="w-full md:w-3/5 px-4">
-                                    <h3 class="text-2xl font-bold font-heading mb-1">Danny B.</h3>
+                                    <h3 class="text-2xl font-bold font-heading mb-1">Tanner Holm</h3>
                                     <p class="mb-2 text-lg text-gray-400">Mentor</p>
                                     <p class="text-lg text-gray-500 leading-loose">Senior Full Stack Developer, Resident WordPress and Shopify Developer</p>
                                 </div>

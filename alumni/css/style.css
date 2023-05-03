@@ -27,6 +27,7 @@ section.mentors {
 background-color: #9AA9FC;
 }
 
+<<<<<<< HEAD
 .emailtext {
     background: rgba(116, 115, 115, 0.6);
     padding: 1em;
@@ -35,4 +36,55 @@ background-color: #9AA9FC;
 
 .emailtext p {
     color: black;
+=======
+/* creating a style for when the popup comes after clicking on image */
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    /* background-color: rgb(0,0,0); */
+    background-color: rgba(200,200,200, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+  
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 75%;
+    text-align: center;
+    margin-top: 10px;
+}
+  
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+  
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+  
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+  
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+>>>>>>> 1892827a274b09edf63673841545bfc35f6ab56b
 }
