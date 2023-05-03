@@ -35,8 +35,7 @@ background-color: #9AA9FC;
 .emailtext p {
     color: black;
 }
-
-=======
+ 
 /* creating a style for when the popup comes after clicking on image */
 .overlay {
     height: 100%;
@@ -86,5 +85,4 @@ background-color: #9AA9FC;
     top: 15px;
     right: 35px;
     }
->>>>>>> 1892827a274b09edf63673841545bfc35f6ab56b
 }
