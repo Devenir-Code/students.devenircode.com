@@ -26,3 +26,13 @@ body {
 section.mentors {
 background-color: #9AA9FC;
 }
+
+.emailtext {
+    background: rgba(116, 115, 115, 0.6);
+    padding: 1em;
+
+}
+
+.emailtext p {
+    color: black;
+}
