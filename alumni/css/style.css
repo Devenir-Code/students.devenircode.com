@@ -2,6 +2,10 @@ p.intro {
     font-family: Roboto;
 }
 
+#topbg {
+    background-image: url("/alumni/student/ciara/images/pattern.svg") ;
+}
+
 .navbar-close {
     padding-bottom: 10em;
     padding-left: 1em;
