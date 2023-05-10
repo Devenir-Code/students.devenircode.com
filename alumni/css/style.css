@@ -7,8 +7,8 @@ p.intro {
 }
 
 .navbar-close {
-    padding-bottom: 10em;
-    padding-left: 1em;
+    position:absolute;
+    top:12px;
 }
 .bottom_section {
     background-image: url("/alumni/mockup-assets/images/keyboard_coffee.png");
