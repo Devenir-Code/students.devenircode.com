@@ -31,6 +31,9 @@ body {
  .ciara:hover, .danny2:hover, .danny3:hover, .danny4:hover, .danny5:hover {
     transform: scale(1.1);
 }
+section.students {
+    padding: 2em;
+}
 section.mentors {
 background-color: #9AA9FC;
 }
