@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Regex Validation Example</title>
+</head>
+
+<body>
+
+    <form onsubmit="return validateForm()">
+        <!-- 
+            email required
+         -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <span id="emailError" style="color: red;"></span>
+        <br><br>
+
+        <!-- 
+            phone optional
+         -->
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" name="phone">
+        <span id="phoneError" style="color: red;"></span>
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        function validateForm() {
+            console.log("Validating form");
+            // Get input values
+            var email = document.getElementById("email").value;
+            var phone = document.getElementById("phone").value;
+
+            // Define regular expressions
+            var emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            var phoneRegex = /^\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}$/;
+
+            // Validate email input
+            if (!emailRegex.test(email)) {
+                document.getElementById("emailError").innerHTML = "Invalid email format";
+                return false;
+            }
+
+            // Validate phone input
+            if (phone !== "" && !phoneRegex.test(phone)) {
+                document.getElementById("phoneError").innerHTML = "Invalid phone number format";
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+</body>
+
+</html>

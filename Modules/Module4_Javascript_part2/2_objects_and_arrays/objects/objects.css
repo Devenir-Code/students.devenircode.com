@@ -1,0 +1,27 @@
+.card {
+border: 1px solid #ccc;
+border-radius: 8px;
+padding: 1rem;
+margin: 1rem;
+width: 300px;
+box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+.card h2 {
+margin-top: 0;
+}
+
+.card p {
+margin-bottom: 0.5rem;
+} 
+
+#card-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#card-list .card {
+    margin: 1rem;
+    flex: 0 1 200px;
+    
+}
